@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333; /* Change the arrow color to black */
+  width: 22px;
+  height: 22px;
+  top: 50%;
+  margin-top: -22px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Optional: customize hover effect */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #333;
+  font-size: 12px;
 }
